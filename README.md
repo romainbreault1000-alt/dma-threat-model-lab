@@ -27,6 +27,18 @@ Direct Memory Access (DMA) enables bus-master devices to read/write physical mem
 
 **Use case:** Understand why software-only anti-tamper fails when memory is touched from outside the CPU trust boundary.
 
+## Repository layout
+
+```
+docs/           — threat model, IOMMU verification, detection playbook
+cases/          — published case files
+scripts/        — PowerShell inventory (read-only)
+schemas/        — JSON event schemas
+out/            — sample script output
+```
+
+See [docs/threat-model.md](docs/threat-model.md) to start.
+
 ---
 
 ## Key Research Areas

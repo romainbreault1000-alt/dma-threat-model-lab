@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-05-31T12:00:00Z",
+  "host_id": "LAB-WORKSTATION-01",
+  "iommu_enabled": true,
+  "note": "Sample event — replace with output from enum-pcie-devices.ps1",
+  "device": {
+    "friendly_name": "Research FPGA (lab)",
+    "instance_id": "PCI\\VEN_10EE&DEV_7024\\SAMPLE",
+    "vendor_id": "0x10EE",
+    "device_id": "0x7024",
+    "bus_master_capable": true
+  }
+}

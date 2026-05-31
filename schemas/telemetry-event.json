@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DmaInventoryEvent",
+  "type": "object",
+  "required": ["timestamp", "host_id", "device"],
+  "properties": {
+    "timestamp": { "type": "string", "format": "date-time" },
+    "host_id": { "type": "string", "description": "Machine baseline ID" },
+    "iommu_enabled": { "type": "boolean" },
+    "device": {
+      "type": "object",
+      "required": ["friendly_name", "instance_id"],
+      "properties": {
+        "friendly_name": { "type": "string" },
+        "instance_id": { "type": "string" },
+        "vendor_id": { "type": "string", "pattern": "^0x[0-9A-Fa-f]{4}$" },
+        "device_id": { "type": "string", "pattern": "^0x[0-9A-Fa-f]{4}$" },
+        "bus_master_capable": { "type": "boolean" }
+      }
+    }
+  }
+}

@@ -1,2 +1,4 @@
-.project/
-*.local
+out/*.json
+!out/sample-*
+.DS_Store
+Thumbs.db
